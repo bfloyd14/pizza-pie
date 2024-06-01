@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link 
+  rel="shortcut icon" 
+  type="image/png" 
+  href="{% static "images/pizza-icon.png" %}"
+  >
+  <title>PizzaPie</title>
+  <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+  {% block head %}
+  {% endblock %}
+</head>
+<body>
+  <header>
+    <div class="header-logo-container">
+      <a href="{% url "home" %}">
+        <img src="{% static "images/pizza-icon.png" %}" alt="Pizza">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="{% url "home" %}">Log In</a></li>
+          <li><a href="{% url "signup" %}">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1>PizzaPie</h1>
+</body>
+</html>
