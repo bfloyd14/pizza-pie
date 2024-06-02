@@ -36,15 +36,12 @@ header {
 }
 
 .header-logo-container {
-  margin: auto;
   padding: 10px 20px 0;
   max-width: 500px;
-  width: 100%;
 }
 
 .header-logo-container img {
   width: 50px;
-
 }
 
 nav {
@@ -66,7 +63,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  text-decoration: none;
+  flex-wrap: wrap;
 }
 
 nav a {
