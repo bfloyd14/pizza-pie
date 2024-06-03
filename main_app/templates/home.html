@@ -11,11 +11,13 @@ href="{% static "css/home.css" %}"
 
 {% block content %}
 <section class="logo-container">
+  <h1>PizzaPie</h1>
+  <p>Talk Pizza to Me</p>
   <div class="pizza-container">
-    
+   <img src="" alt="">
   </div>
 </section>
-{% comment %} {% if not user.is_authenticated %} {% endcomment %}
+{% if not user.is_authenticated %}
 <section>
   <h1>Log In</h1>
   <form action="" method="POST">
@@ -25,6 +27,6 @@ href="{% static "css/home.css" %}"
       <button type="submit" class="btn">Login</button>
   </form>
 </section>
-{% comment %} {% endif %} {% endcomment %}
+{% endif %}
 
 {% endblock %}
