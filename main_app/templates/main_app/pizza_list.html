@@ -11,7 +11,7 @@ href="{% static "css/pizza/pizza-index.css" %}"
 
 {% block content %}
 <section class="page-header">
-  <h1>Favorita Pizza's</h1>
+  <h1>Favorite Pizza's</h1>
   <img src="{% static "images/everything-pie.jpg" %}" alt="Everything Pizza">
 </section>
 <section class="card-container"> 
@@ -23,7 +23,7 @@ href="{% static "css/pizza/pizza-index.css" %}"
             <img src="" alt="">
           </div>
           <h2 class="card-title">{{pizza.name}}</h2>
-          <p>{{pizza.user}} at this pizza at {{pizza.location}}</p>
+          <p>{{pizza.user}} ate this pizza at {{pizza.location}}</p>
         </div>
       </a>
       </div>
