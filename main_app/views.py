@@ -1,3 +1,4 @@
+from typing import Any
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import ListView, DetailView
@@ -31,5 +32,20 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'signup.html', context) 
 
+class PizzaList(ListView):
+  model = Pizza
+  template_name = 'pizzas/index.html'
 
+class PizzaCreate(CreateView):
+  model = Pizza
+  fields = ['name', 'ingredients', 'description', 'location']
+
+  def form_valid(self, form):
+    form.instance.user = self.request.user
+    return super().form_valid(form)
+
+class PizzaDetail(DetailView):
+  model = Pizza
+  
+  
     

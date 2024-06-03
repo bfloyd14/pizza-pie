@@ -11,7 +11,11 @@
   href="{% static "images/pizza-icon.png" %}"
   >
   <title>PizzaPie</title>
-  <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+  <link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static "css/base.css" %}"
+  >
   {% block head %}
   {% endblock %}
 </head>
@@ -27,9 +31,14 @@
           <li><a href="{% url "about" %}">About Us</a></li>
           <li><a href="{% url "home" %}">Log In</a></li>
           <li><a href="{% url "signup" %}">Sign Up</a></li>
+          <li><a href="{% url "pizza-index" %}">Favorite Pizzas</a></li>
+          <li><a href="{% url "pizza-create" %}">Add Pizza</a></li>
         </ul>
       </nav>
   </header>
-  <h1>PizzaPie</h1>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
 </body>
 </html>
