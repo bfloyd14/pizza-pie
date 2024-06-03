@@ -32,11 +32,11 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'signup.html', context) 
 
-class PizzaList(ListView):
+class PizzaList(LoginRequiredMixin, ListView):
   model = Pizza
   template_name = 'pizzas/index.html'
 
-class PizzaCreate(CreateView):
+class PizzaCreate(LoginRequiredMixin, CreateView):
   model = Pizza
   fields = ['name', 'ingredients', 'description', 'location']
 
@@ -44,8 +44,17 @@ class PizzaCreate(CreateView):
     form.instance.user = self.request.user
     return super().form_valid(form)
 
-class PizzaDetail(DetailView):
+class PizzaDetail(LoginRequiredMixin, DetailView):
   model = Pizza
+
+class PizzaUpdate(LoginRequiredMixin, UpdateView):
+  model = Pizza
+  fields = ['name', 'ingredients', 'description', 'location']
+
+class PizzaDelete(LoginRequiredMixin, DeleteView):
+  model = Pizza
+  success_url = '/pizzas/'  
+
   
   
     
