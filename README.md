@@ -1,14 +1,12 @@
 # PizzaPie - Talk Pizza to Me
 ## Click here to share your favorite pizzas [PizzaPie]()
 
-![alt text]( "PizzaPie Home Page")
-![alt text]( "PizzaPie Index Page")
-![alt text]( "PizzaPie Details Page")
+![alt text](https://i.imgur.com/lqVRXcZ.jpeg "PizzaPie Home Page")
+![alt text](https://i.imgur.com/A8C7Lul.jpeg "PizzaPie Index Page")
+![alt text](https://i.imgur.com/Azud1qh.jpeg "PizzaPie Details Page")
 
 PizzaPie was created to have a place where people can post their favorite pizzas and then share where (restaurant/home ) they had this delicious experience at !  Now other pizza enthusiast's can talk and share different kinds of pizza's!
 
-
-## [Planning Material]()
 
 ## Technologies Used
 
@@ -22,10 +20,14 @@ PizzaPie was created to have a place where people can post their favorite pizzas
 
 ## Credits
 
-- AI generated Alacena image for Favicon & Logo from []()
-- Icons from []()
-- Background Image from []()
+- AI generated images from [Copilot](https://copilot.microsoft.com/)
+- Favicon from [Google](www.google.com)
+- Background Image from [Google](www.google.com)
 
 
 ## Icebox Items
+- Add an ingredients model
+- Add a comment model
+- Add conditional rendering depending on what pizza you create
+- Add a review model
 
