@@ -6,7 +6,6 @@
   align-items: center;
 }
 
-
 .page-container {
   display: flex;
   justify-content: center;
@@ -41,7 +40,6 @@
 
 .usr-img {
   width: 100%;
-  border-radius: var(--card-border-radius);
 }
 
 .card-title {
@@ -51,15 +49,13 @@
 
 .card > a {
   text-decoration: none;
-  color: var(--text-color);
 }
 
 .card h2 {
   margin: 10px 0;
-  font-size: var(--font-xl);
 }
 
 .card p {
   margin: 5px 0;
-  font-size: var(--font-reg);
+
 }

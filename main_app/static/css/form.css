@@ -4,6 +4,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  align-self: center;
 }
 
 main {
@@ -13,12 +14,22 @@ main {
   align-items: center;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+}
 
+button{
+  align-self: center;
+}
+.btn {
+  align-self: center;
+}
 .page-container{
   border: 2px solid black;
   border-radius: 6px;
-  width: 75%;
-  height: 550px;
+  min-width: 75%;
+  min-height: 550px;
   box-shadow: 2px 2px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -30,6 +41,10 @@ main {
   opacity: .95;
 }
 
+.page-container button {
+  margin-left: 50px;
+}
+
 .signup-container {
   border: 2px solid black;
   border-radius: 4px;
@@ -39,11 +54,15 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-self: center;
 }
 
-.signup-container .btn{
+main .signup-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px;
+  align-self: center;
 }
 
 table {
@@ -92,7 +111,6 @@ td > textarea {
   height: 75px;
   font-family: inherit;
 }
-
 
 .page-header img{
   width: 75px;

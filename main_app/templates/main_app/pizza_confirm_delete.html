@@ -2,14 +2,18 @@
 {% load static %}
 
 {% block content %}
-<div class="page-header">
-  <img src="{% static "images/pizza-guy.jpg" %}" alt="A slice of pizze with arms and legs">
+<div class="delete-container">
+  <div class="page-header">
+    <img src="{% static "images/full-pizza.jpg" %}" alt="A slice of pizze with arms and legs">
+  </div>
+  <h2>Are you sure you want to throw away this {{object.name}} forever?</h2>
+  <form action="" method="post" class="form">
+    {% csrf_token %}
+    <div class="button-container">
+      <a href="{% url "pizza-detail" pizza.id %}" class="btn">Cancel</a>
+      <button type="submit" class="btn">Delete</button>
+    </div>
+  </form>
 </div>
-<h2>Are you sure you want to throw away this {{object.name}} forever?</h2>
-<form action="" method="post" class="form">
-  {% csrf_token %}
-  <a href="{% url "pizza-detail" pizza.id %}" class="btn secondary">Cancel</a>
-  <button type="submit" class="btn">Delete</button>
-</form>
 
 {% endblock %}

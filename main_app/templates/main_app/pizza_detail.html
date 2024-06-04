@@ -16,7 +16,9 @@
     <h2>{{pizza.description}}</h2>
     <h2>{{pizza.location}}</h2>
   </div>
+  {% if user.is_authenticated %}
   <a href="{% url "pizza-update" pizza.id%}">Edit</a>
   <a href="{% url "pizza-delete" pizza.id%}">Delete</a> 
+  {% endif %}
 </div>
 {% endblock %}

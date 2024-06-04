@@ -15,7 +15,7 @@ main > section {
   border: 2px solid black;
   box-shadow: 2px 2px;
   border-radius: 4px;
-  height: 445px;
+  min-height: 445px;
   background-color: #FEEAFA;
   opacity: .95;
 }

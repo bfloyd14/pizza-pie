@@ -1,4 +1,5 @@
 .pizza-container {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,6 +7,7 @@
   border: 2px solid black;
   border-radius: 4px;
   background-color: #FEEAFA;
+  width: 75%;
 }
 
 .pizza-img {

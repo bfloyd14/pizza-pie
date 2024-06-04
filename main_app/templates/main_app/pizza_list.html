@@ -15,7 +15,6 @@ href="{% static "css/pizza/pizza-index.css" %}"
     <h1>Favorite Pizza's</h1>
     <img src="{% static "images/everything-pie.jpg" %}" alt="Everything Pizza">
   </section>
-</div>
   <section class="card-container"> 
     {% for pizza in pizza_list  %}
     <div class="card">
@@ -29,7 +28,8 @@ href="{% static "css/pizza/pizza-index.css" %}"
         </div>
       </a>
     </div>
-      {% endfor %}
+    {% endfor %}
 </section>
+</div>
 
 {% endblock  %}
