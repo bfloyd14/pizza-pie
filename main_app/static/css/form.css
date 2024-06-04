@@ -13,11 +13,6 @@ main {
   align-items: center;
 }
 
-.btn {
-  font-size: 16px;
-  width: auto;
-  text-align: center;
-}
 
 .page-container{
   border: 2px solid black;
@@ -31,19 +26,24 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #EBA844;
+  background-color: #FEEAFA;
   opacity: .95;
 }
 
 .signup-container {
   border: 2px solid black;
   border-radius: 4px;
-  background-color: #EBA844;
+  background-color: #FEEAFA;
   opacity: .95;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.signup-container .btn{
+  align-items: center;
+  box-shadow: 2px 2px;
 }
 
 table {
@@ -98,16 +98,6 @@ td > textarea {
   width: 75px;
 }
 
-button {
-  width: 10%;
-  border-radius: 4px;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: #FEEAFA ;
-  color: black;
-  border: solid black 2px;
-}
 
-.btn {
-  align-items: center;
-}
+
+

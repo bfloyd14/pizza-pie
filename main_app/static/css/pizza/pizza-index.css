@@ -3,13 +3,35 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.page-header {
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #FEEAFA;
+  width: 40%;
+  padding: 10px;
 }
 
 .card {
   width: 275px;
   margin: 10px;
-  border: var(--borders);
-  box-shadow: var(--card-box-shadow);
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+  background-color: #FEEAFA;
+  text-align: center;
+  height: 150px;
+  border-radius: 4px;
 }
 
 .card-content {
@@ -20,6 +42,11 @@
 .usr-img {
   width: 100%;
   border-radius: var(--card-border-radius);
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .card > a {

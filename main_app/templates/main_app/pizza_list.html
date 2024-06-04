@@ -10,23 +10,25 @@ href="{% static "css/pizza/pizza-index.css" %}"
 {% endblock  %}
 
 {% block content %}
-<section class="page-header">
-  <h1>Favorite Pizza's</h1>
-  <img src="{% static "images/everything-pie.jpg" %}" alt="Everything Pizza">
-</section>
-<section class="card-container"> 
-  {% for pizza in pizza_list  %}
+<div class="page-container">
+  <section class="page-header">
+    <h1>Favorite Pizza's</h1>
+    <img src="{% static "images/everything-pie.jpg" %}" alt="Everything Pizza">
+  </section>
+</div>
+  <section class="card-container"> 
+    {% for pizza in pizza_list  %}
     <div class="card">
       <a href="{% url "pizza-detail" pizza.id %}">
         <div class="card-content">
           <div class="card-img-container">
             <img src="" alt="">
           </div>
-          <h2 class="card-title">{{pizza.name}}</h2>
+          <div class="card-title">{{pizza.name}}</div>
           <p>{{pizza.user}} ate this pizza at {{pizza.location}}</p>
         </div>
       </a>
-      </div>
+    </div>
       {% endfor %}
 </section>
 

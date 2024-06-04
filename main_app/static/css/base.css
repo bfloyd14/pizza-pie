@@ -47,6 +47,7 @@ header {
 
 .header-logo-container img {
   width: 30px;
+  margin-bottom: 3px;
 }
 
 
@@ -99,16 +100,18 @@ form a {
 }
 
 .btn {
-  font-size: 12px;
-  padding: 8px 16px;
-  border-radius: 6px;
-  border-width: 2px;
-  border-style: solid;
-  text-decoration: none;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: inherit;
-  margin-right: 10px;
+  font-size: 16px;
+  width: auto;
+  text-align: center;
+  align-items: center;
+  width: auto;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #FEEAFA ;
+  color: black;
+  border: solid black 2px;
+  box-shadow: 2px 2px;
 }
 
 
@@ -128,11 +131,11 @@ form a {
 }
 
 .about-container {
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
 }
 
 .about img {
