@@ -19,7 +19,7 @@
     <h1>Restaurant/Establishment</h1>
     <h2>{{pizza.location}}</h2>
   </div>
-  {% if pizza.user %}
+  {% if pizza.user == user %}
   <div class="button-container">
     <a href="{% url "pizza-update" pizza.id%}" class="btn">Edit</a>
     <a href="{% url "pizza-delete" pizza.id%}" class="btn">Delete</a> 

@@ -14,9 +14,9 @@ PizzaPie was created to have a place where people can post their favorite pizzas
 - CSS
 - Python 3
 - Django
-- Whimsical
-- Trello
 - Imgur
+- Fly.io
+- Github
 
 ## Credits
 

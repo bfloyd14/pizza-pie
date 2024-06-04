@@ -8,6 +8,7 @@
   border-radius: 4px;
   background-color: #FEEAFA;
   width: 75%;
+  height: auto;
 }
 
 .pizza-img {
@@ -17,7 +18,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+}
+
+.pizza-img img {
+  width: 75px;
 }
 
 .pizza-container img {
@@ -27,16 +31,12 @@
 }
 
 .name {
-  font-size: 36px;
-}
-
-.usr-img {
-  width: 100%;
-  border-radius: var(--card-border-radius);
+  font-size: 42px;
+  font-weight: bold;
 }
 
 .pizza-details {
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,25 +44,9 @@
   text-align: center;
 }
 
-.subsection-title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.subsection-content {
-  margin: 0 8px;
-}
-
-.color-block {
-  opacity: 0.8;
-  height: 25px;
-  width: 25px;
-  margin-right: 10px;
-}
-
 .pizza-details h1 {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
   margin: 15px 0 3px;
   border-bottom: 2px solid black;
 }
@@ -70,8 +54,9 @@
 .pizza-details h2 {
   font-size: 16px;
   margin: 0 0 10px;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 10px;
+  color: rgb(58, 58, 58)
 }
 
 .subsection-content input,
@@ -106,7 +91,6 @@
 }
 
 @media only screen and (min-width: 1024px) {
-
 .pizza-container a {
   text-decoration: none;
   }

@@ -269,13 +269,6 @@ a {
   .page-header img:first-of-type {
     margin-left: 25px;
   }
-
-  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    header {
-      -webkit-backdrop-filter: blur(3px);
-      backdrop-filter: blur(3px);
-    }
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -322,8 +315,6 @@ a {
       background: #FEEAFA ;
       border: solid 2px black;
       border-radius: 18px;
-      -webkit-backdrop-filter: blur(3px);
-      backdrop-filter: blur(3px);
     }
   }
 }
