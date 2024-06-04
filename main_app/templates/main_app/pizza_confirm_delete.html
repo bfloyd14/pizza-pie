@@ -4,9 +4,9 @@
 {% block content %}
 <div class="delete-container">
   <div class="page-header">
-    <img src="{% static "images/full-pizza.jpg" %}" alt="A slice of pizze with arms and legs">
+    <img src="{% static "images/whole-pizza.png" %}" alt="A slice of pizze with arms and legs">
   </div>
-  <h2>Are you sure you want to throw away this {{object.name}} forever?</h2>
+  <h2 class='delete-message'>Are you sure you want to throw away this {{object.name}} forever?</h2>
   <form action="" method="post" class="form">
     {% csrf_token %}
     <div class="button-container">

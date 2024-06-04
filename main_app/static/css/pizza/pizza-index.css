@@ -57,5 +57,8 @@
 
 .card p {
   margin: 5px 0;
+}
 
+.card-img-container img {
+  width: 100px;
 }

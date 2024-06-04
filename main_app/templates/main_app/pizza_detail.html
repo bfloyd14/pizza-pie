@@ -9,16 +9,21 @@
 <div class="pizza-container">
   <div class="pizza-img">
     <div class="name">{{pizza.name}}</div>
-    <img src="{% static "images/everything-pie.jpg" %}" alt="">
+    <img src="{% static "images/pizza-pie.png" %}" alt="">
   </div>
   <div class="pizza-details">
+    <h1>Ingredients</h1>
     <h2>{{pizza.ingredients}}</h2>
+    <h1>Pizza Info</h1>
     <h2>{{pizza.description}}</h2>
+    <h1>Restaurant/Establishment</h1>
     <h2>{{pizza.location}}</h2>
   </div>
-  {% if user.is_authenticated %}
-  <a href="{% url "pizza-update" pizza.id%}">Edit</a>
-  <a href="{% url "pizza-delete" pizza.id%}">Delete</a> 
+  {% if pizza.user %}
+  <div class="button-container">
+    <a href="{% url "pizza-update" pizza.id%}" class="btn">Edit</a>
+    <a href="{% url "pizza-delete" pizza.id%}" class="btn">Delete</a> 
+  </div>
   {% endif %}
 </div>
 {% endblock %}

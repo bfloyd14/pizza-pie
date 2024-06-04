@@ -13,6 +13,17 @@
 .pizza-img {
   width: 75%;
   max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pizza-container img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .name {
@@ -26,6 +37,11 @@
 
 .pizza-details {
   width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .subsection-title {
@@ -46,31 +62,16 @@
 }
 
 .pizza-details h1 {
-  font-size: var(--font-xxl);
+  font-size: 20px;
   margin: 15px 0 3px;
+  border-bottom: 2px solid black;
 }
 
 .pizza-details h2 {
-  font-size: var(--font-xl);
+  font-size: 16px;
   margin: 0 0 10px;
   margin-top: 0;
   margin-bottom: 10px;
-}
-
-.pizza-details h3 {
-  margin: 20px 0 10px;
-  font-size: var(--font-l);
-}
-
-.pizza-details p {
-  font-size: var(--font-reg);
-  margin: 5px 0;
-}
-
-.subsection-content p,
-.subsection-content input,
-.subsection-content select {
-  font-size: var(--font-l);
 }
 
 .subsection-content input,
