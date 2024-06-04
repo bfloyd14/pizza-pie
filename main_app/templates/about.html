@@ -2,10 +2,14 @@
 {% load static %}
 
 {% block content %}
-  <h1>The Inception of PizzaPie</h1>
-  <hr />
-  <p class='page-content'>
-    We wanted to create a place where people can post their favorite pizzas and then 
-    share where the location/establishment that they ate this amazing pizza at!  Now other pizza enthusiast's can talk and share different kinds of pizza's!
-  </p>
+<div class="about-container">
+  <div class="about">
+    <h1>The Inception of PizzaPie
+    <img src="{% static "images/pizza-pie.png" %}" alt=""></h1>
+    <p class='page-content'>
+      We wanted to create a place where people can post their favorite pizzas and then 
+      share where the location/establishment that they ate this amazing pizza at!  Now other pizza enthusiast's can talk and share different kinds of pizza's!
+    </p>
+  </div>
+</div>
 {% endblock %}

@@ -14,18 +14,20 @@ href="{% static "css/home.css" %}"
   <h1>PizzaPie</h1>
   <p>Talk Pizza to Me</p>
   <div class="pizza-container">
-   <img src="" alt="">
+  <img src="{% static "images/pizza-pie.png" %}" alt="">
   </div>
 </section>
 {% if not user.is_authenticated %}
 <section>
-  <h1>Log In</h1>
-  <form action="" method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
+  <div class="login-container">
+    <h1>Log In</h1>
+    <form action="" method="POST">
+      {% csrf_token %}
+      {{form.as_p}}
       <input type="hidden" name="next" value="{{ next }}">
       <button type="submit" class="btn">Login</button>
-  </form>
+    </form>
+  </div>
 </section>
 {% endif %}
 
