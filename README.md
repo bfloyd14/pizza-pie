@@ -1,5 +1,5 @@
 # PizzaPie - Talk Pizza to Me
-## Click here to find your next meal on the [Alacena App](https://alacena-jb.netlify.app/)
+## Click here to share your favorite pizzas [PizzaPie]()
 
 ![alt text]( "PizzaPie Home Page")
 ![alt text]( "PizzaPie Index Page")

@@ -2,12 +2,29 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 table {
   padding: 0 40px;
   width: 100%;
   border-spacing: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table input {
+  width: 300px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+table textarea {
+  width: 300px;
+  height: 30px;
+  border-radius: 4px;
 }
 
 th {
@@ -15,7 +32,10 @@ th {
   padding: 6px 20px 0 0;
   font-weight: normal;
   vertical-align: top;
-  font-size: var(--font-reg);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  
 }
 
 td {
@@ -25,19 +45,25 @@ td {
 td > * {
   width: 100%;
   padding: 2px 4px;
-  font-size: var(--font-l);
+  font-size: 14px;
 }
 
 td > textarea {
-  height: calc(4 * var(--font-l) + 8px);
+  height: 75px;
   font-family: inherit;
 }
 
-.btn {
-  align-self: flex-end;
-  margin-right: 40px;
-}
 
 .page-header img{
   width: 75px;
+}
+
+button {
+  width: 10%;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #FEEAFA ;
+  color: black;
+  border: solid black 2px;
 }

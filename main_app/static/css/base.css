@@ -27,21 +27,28 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
+  background-color: #F7B05B;
 }
 
 header {
   width: 100%;
-  background-color: fuchsia;
 }
 
+
 .header-logo-container {
-  padding: 10px 20px 0;
+  padding: 10px 20px 10px;
   max-width: 500px;
+  font-size: 18px ;
+  font-weight: bold;
+  gap: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .header-logo-container img {
-  width: 50px;
+  width: 30px;
 }
+
 
 nav {
   margin: 10px;
@@ -69,6 +76,7 @@ nav a {
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
+  color: black;
 }
 
 nav li {
@@ -87,49 +95,27 @@ form a {
   display: flex;
   align-items: center;
   margin: 20px;
+  justify-content: center;
 }
 
 .btn {
-  font-size: var(--font-l);
+  font-size: 12px;
   padding: 8px 16px;
   border-radius: 6px;
   border-width: 2px;
   border-style: solid;
   text-decoration: none;
-  background-color: var(--button-bg);
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
   margin-right: 10px;
 }
 
-.btn:hover {
-  background-color: var(--button-bg-hover);
-}
-
-.submit {
-  color: var(--submit);
-  border-color: var(--submit);
-}
-
-.secondary {
-  color: var(--secondary);
-  border-color: var(--secondary);
-}
-
-.warn {
-  color: var(--warn);
-  border-color: var(--warn);
-}
-
-.danger {
-  color: var(--danger);
-  border-color: var(--danger);
-}
 
 .page-header h1 {
-  font-size: var(--font-xxl);
+  font-size: 28px;
   margin: 0;
+
 }
 
 .page-header img {
@@ -141,9 +127,7 @@ form a {
   margin-left: 20px;
 }
 
-.page-content {
-  font-size: var(--font-reg);
-}
+
 
 @media only screen and (min-width: 768px) {
   header {
@@ -158,6 +142,8 @@ form a {
     max-width: 1300px;
     min-height: calc(100vh - 53px);
   }
+
+
 
   nav,
   .header-logo-container {
@@ -184,10 +170,6 @@ form a {
     width: 213px;
   }
 
-  .page-header h1 {
-    font-size: var(--font-xtreme);
-  }
-  
   .page-header img {
     height: 50px;
     margin-left:20px;
@@ -199,7 +181,6 @@ form a {
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     header {
-      background: var(--nav-bg);
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
@@ -223,8 +204,8 @@ form a {
   nav,
   .header-logo-container {
     margin: 0;
-    background: var(--nav-bg-ff);
-    border: var(--borders);
+    background: #FEEAFA ;
+    border: solid 2px black;
     border-radius: 18px;
   }
 
@@ -235,8 +216,8 @@ form a {
   .header-logo-container {
     /* visual fix to help align logo */
     padding-top: 6px;
-    width: 256px;
-    height: 35px;
+    width: 200px;
+    height: 40px;
   }
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -247,7 +228,7 @@ form a {
 
     nav,
     .header-logo-container {
-      background: rgba(104, 197, 248, .6);
+      background: #FEEAFA ;
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
