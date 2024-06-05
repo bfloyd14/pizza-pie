@@ -17,9 +17,14 @@
 .page-header {
   border: 2px solid black;
   border-radius: 4px;
-  background-color: #FEEAFA;
+  background-color: white;
   width: 40%;
   padding: 10px;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  text-align: center;
 }
 
 .card {
@@ -27,7 +32,7 @@
   margin: 10px;
   border: 2px solid black;
   box-shadow: 2px 2px;
-  background-color: #FEEAFA;
+  background-color: white;
   text-align: center;
   height: 150px;
   border-radius: 4px;

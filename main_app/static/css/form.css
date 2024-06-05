@@ -37,8 +37,7 @@ button{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #FEEAFA;
-  opacity: .95;
+  background-color: white;
 }
 
 .page-container button {
@@ -48,8 +47,7 @@ button{
 .signup-container {
   border: 2px solid black;
   border-radius: 4px;
-  background-color: #FEEAFA;
-  opacity: .95;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;

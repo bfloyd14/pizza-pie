@@ -142,7 +142,7 @@ a {
   border-radius: 4px;
   font-size: 20px;
   font-weight: bold;
-  background-color: #FEEAFA ;
+  background-color: white ;
   color: black;
   border: solid black 2px;
   box-shadow: 2px 2px;
@@ -158,7 +158,7 @@ form a {
   border-radius: 4px;
   font-size: 20px;
   font-weight: bold;
-  background-color: #FEEAFA ;
+  background-color: white ;
   color: black;
   border: solid black 2px;
   box-shadow: 2px 2px;
@@ -212,10 +212,9 @@ form a {
   flex-direction: column;
   border: 2px solid black;
   border-radius: 4px;
-  background-color: #FEEAFA;
-  opacity: .95;
+  background-color: white;
   width: 75%;
-  height: 350px;
+  height: 450px;
   padding-bottom: 50px;
 }
 
@@ -257,7 +256,7 @@ form a {
   .header-logo-container {
     margin: 10px 0;
     padding: 0 15px;
-    background: #FEEAFA ;
+    background: white ;
     border: solid 2px black;
     border-radius: 18px;
   }
@@ -308,7 +307,7 @@ form a {
   nav,
   .header-logo-container {
     margin: 0;
-    background: #FEEAFA ;
+    background: white ;
     border: solid 2px black;
     border-radius: 18px;
   }
@@ -332,7 +331,7 @@ form a {
 
     nav,
     .header-logo-container {
-      background: #FEEAFA ;
+      background: white ;
       border: solid 2px black;
       border-radius: 18px;
     }
