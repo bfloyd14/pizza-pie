@@ -47,6 +47,12 @@
   font-weight: bold;
 }
 
+.card-content p {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(58, 58, 58) 
+}
+
 .card > a {
   text-decoration: none;
 }

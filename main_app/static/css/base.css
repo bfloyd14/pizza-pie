@@ -48,7 +48,6 @@ header {
   width: 30px;
 }
 
-
 nav {
   margin: 10px;
 }
@@ -149,7 +148,22 @@ a {
   box-shadow: 2px 2px;
   align-self: center;
   padding: 5px 10px 5px 10px;
+}
 
+form a {
+  width: 90px;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #FEEAFA ;
+  color: black;
+  border: solid black 2px;
+  box-shadow: 2px 2px;
+  align-self: center;
+  padding: 5px 10px 5px 10px;
 }
 
 .name {
@@ -160,6 +174,10 @@ a {
   font-size: 28px;
   margin: 0;
 
+}
+
+.pizza-pic img {
+  width: 200px;
 }
 
 .page-header img {
@@ -203,6 +221,8 @@ a {
 
 .delete-message {
   font-size: 20px;
+  width: 75%;
+  text-align: center;
 }
 
 .about p {
@@ -219,7 +239,7 @@ a {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   header {
     position: sticky;
     display: flex;

@@ -22,7 +22,9 @@
   {% if pizza.user == user %}
   <div class="button-container">
     <a href="{% url "pizza-update" pizza.id%}" class="btn">Edit</a>
-    <a href="{% url "pizza-delete" pizza.id%}" class="btn">Delete</a> 
+    <a href="{% url "pizza-delete" pizza.id%}" class="btn">Delete</a>
+  {% else %}
+  <a href="{% url "pizza-index" %}" class="btn">Back</a> 
   </div>
   {% endif %}
 </div>

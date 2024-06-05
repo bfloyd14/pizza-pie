@@ -11,6 +11,11 @@
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
 .pizza-img {
   width: 75%;
   max-width: 350px;
@@ -77,7 +82,7 @@
   margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .pizza-container {
     padding: 35px 30px;
     align-items: center;
